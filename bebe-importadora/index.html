@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BabyImport - Importadora de Productos para Bebés</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-top">
+                <div class="contact-info">
+                    <span><i class="fas fa-phone"></i> +1 234 567 890</span>
+                    <span><i class="fas fa-envelope"></i> info@babyimport.com</span>
+                </div>
+                <div class="header-actions">
+                    <a href="#" class="wishlist"><i class="far fa-heart"></i> Favoritos</a>
+                    <a href="#" class="cart"><i class="fas fa-shopping-cart"></i> Carrito (0)</a>
+                </div>
+            </div>
+            <nav class="navbar">
+                <div class="logo">
+                    <h1><i class="fas fa-baby"></i> BabyImport</h1>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="#inicio" class="active">Inicio</a></li>
+                    <li><a href="#productos">Productos</a></li>
+                    <li><a href="#categorias">Categorías</a></li>
+                    <li><a href="#nosotros">Nosotros</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="hero">
+        <div class="hero-content">
+            <h2>Los Mejores Productos para tu Bebé</h2>
+            <p>Importamos directamente los productos más seguros y de mayor calidad para el cuidado de tu pequeño</p>
+            <a href="#productos" class="btn-primary">Ver Catálogo</a>
+        </div>
+    </section>
+
+    <!-- Features -->
+    <section class="features">
+        <div class="container">
+            <div class="feature-grid">
+                <div class="feature-card">
+                    <i class="fas fa-shipping-fast"></i>
+                    <h3>Envío Rápido</h3>
+                    <p>Entrega en 24-48 horas</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-shield-alt"></i>
+                    <h3>Productos Seguros</h3>
+                    <p>Certificados de calidad</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-undo"></i>
+                    <h3>Devolución Gratis</h3>
+                    <p>30 días de garantía</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-headset"></i>
+                    <h3>Soporte 24/7</h3>
+                    <p>Atención personalizada</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories -->
+    <section id="categorias" class="categories">
+        <div class="container">
+            <h2 class="section-title">Categorías Populares</h2>
+            <div class="category-grid">
+                <div class="category-card">
+                    <div class="category-icon">
+                        <i class="fas fa-car-seat"></i>
+                    </div>
+                    <h3>Sillas de Auto</h3>
+                    <p>Seguridad máxima</p>
+                </div>
+                <div class="category-card">
+                    <div class="category-icon">
+                        <i class="fas fa-wheelchair"></i>
+                    </div>
+                    <h3>Cochecitos</h3>
+                    <p>Comodidad y estilo</p>
+                </div>
+                <div class="category-card">
+                    <div class="category-icon">
+                        <i class="fas fa-bed"></i>
+                    </div>
+                    <h3>Cunas y Moisés</h3>
+                    <p>Descanso seguro</p>
+                </div>
+                <div class="category-card">
+                    <div class="category-icon">
+                        <i class="fas fa-tshirt"></i>
+                    </div>
+                    <h3>Ropa de Bebé</h3>
+                    <p>Suavidad y confort</p>
+                </div>
+                <div class="category-card">
+                    <div class="category-icon">
+                        <i class="fas fa-bottle-droplet"></i>
+                    </div>
+                    <h3>Alimentación</h3>
+                    <p>Nutrición saludable</p>
+                </div>
+                <div class="category-card">
+                    <div class="category-icon">
+                        <i class="fas fa-toys"></i>
+                    </div>
+                    <h3>Juguetes</h3>
+                    <p>Diversión educativa</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Products -->
+    <section id="productos" class="products">
+        <div class="container">
+            <h2 class="section-title">Productos Destacados</h2>
+            <div class="product-filters">
+                <button class="filter-btn active" data-filter="all">Todos</button>
+                <button class="filter-btn" data-filter="sillas">Sillas</button>
+                <button class="filter-btn" data-filter="cochecitos">Cochecitos</button>
+                <button class="filter-btn" data-filter="ropa">Ropa</button>
+                <button class="filter-btn" data-filter="juguetes">Juguetes</button>
+            </div>
+            <div class="product-grid">
+                <div class="product-card" data-category="sillas">
+                    <div class="product-badge">Nuevo</div>
+                    <div class="product-image">
+                        <i class="fas fa-car-seat"></i>
+                    </div>
+                    <div class="product-info">
+                        <h3>Silla de Auto Premium</h3>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <span>(45)</span>
+                        </div>
+                        <p class="product-price">$189.99</p>
+                        <button class="btn-add-cart">Añadir al Carrito</button>
+                    </div>
+                </div>
+                <div class="product-card" data-category="cochecitos">
+                    <div class="product-image">
+                        <i class="fas fa-wheelchair"></i>
+                    </div>
+                    <div class="product-info">
+                        <h3>Cochecito Ultraligero</h3>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <span>(32)</span>
+                        </div>
+                        <p class="product-price">$249.99</p>
+                        <button class="btn-add-cart">Añadir al Carrito</button>
+                    </div>
+                </div>
+                <div class="product-card" data-category="ropa">
+                    <div class="product-badge sale">-20%</div>
+                    <div class="product-image">
+                        <i class="fas fa-tshirt"></i>
+                    </div>
+                    <div class="product-info">
+                        <h3>Set de Ropa Recién Nacido</h3>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span>(78)</span>
+                        </div>
+                        <p class="product-price"><span class="old-price">$59.99</span> $47.99</p>
+                        <button class="btn-add-cart">Añadir al Carrito</button>
+                    </div>
+                </div>
+                <div class="product-card" data-category="juguetes">
+                    <div class="product-image">
+                        <i class="fas fa-toys"></i>
+                    </div>
+                    <div class="product-info">
+                        <h3>Gimnasio de Actividades</h3>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <span>(56)</span>
+                        </div>
+                        <p class="product-price">$79.99</p>
+                        <button class="btn-add-cart">Añadir al Carrito</button>
+                    </div>
+                </div>
+                <div class="product-card" data-category="sillas">
+                    <div class="product-image">
+                        <i class="fas fa-chair"></i>
+                    </div>
+                    <div class="product-info">
+                        <h3>Silla Alta Alimentación</h3>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <span>(23)</span>
+                        </div>
+                        <p class="product-price">$129.99</p>
+                        <button class="btn-add-cart">Añadir al Carrito</button>
+                    </div>
+                </div>
+                <div class="product-card" data-category="cochecitos">
+                    <div class="product-badge">Hot</div>
+                    <div class="product-image">
+                        <i class="fas fa-baby-carriage"></i>
+                    </div>
+                    <div class="product-info">
+                        <h3>Sistema de Viaje 3-en-1</h3>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span>(91)</span>
+                        </div>
+                        <p class="product-price">$399.99</p>
+                        <button class="btn-add-cart">Añadir al Carrito</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us -->
+    <section id="nosotros" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>Sobre BabyImport</h2>
+                    <p>Somos una importadora especializada en productos para bebés con más de 10 años de experiencia en el mercado. Trabajamos directamente con los mejores fabricantes internacionales para ofrecer productos de la más alta calidad a precios competitivos.</p>
+                    <p>Nuestra misión es proporcionar a los padres productos seguros, innovadores y prácticos que faciliten el cuidado de sus pequeños y contribuyan a su desarrollo saludable.</p>
+                    <ul class="about-list">
+                        <li><i class="fas fa-check-circle"></i> Productos certificados internacionalmente</li>
+                        <li><i class="fas fa-check-circle"></i> Garantía de satisfacción</li>
+                        <li><i class="fas fa-check-circle"></i> Atención personalizada</li>
+                        <li><i class="fas fa-check-circle"></i> Envíos a todo el país</li>
+                    </ul>
+                </div>
+                <div class="about-stats">
+                    <div class="stat-card">
+                        <h3>10+</h3>
+                        <p>Años de Experiencia</p>
+                    </div>
+                    <div class="stat-card">
+                        <h3>5000+</h3>
+                        <p>Clientes Felices</p>
+                    </div>
+                    <div class="stat-card">
+                        <h3>200+</h3>
+                        <p>Productos Importados</p>
+                    </div>
+                    <div class="stat-card">
+                        <h3>24/7</h3>
+                        <p>Soporte Disponible</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="newsletter">
+        <div class="container">
+            <div class="newsletter-content">
+                <h2>Únete a Nuestra Comunidad</h2>
+                <p>Suscríbete y recibe ofertas exclusivas, consejos de cuidado infantil y novedades</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Tu correo electrónico" required>
+                    <button type="submit" class="btn-primary">Suscribirse</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contacto" class="contact">
+        <div class="container">
+            <h2 class="section-title">Contáctanos</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Ubicación</h4>
+                            <p>Av. Principal 123, Ciudad Comercial</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>Teléfono</h4>
+                            <p>+1 234 567 890</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <p>info@babyimport.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <h4>Horario</h4>
+                            <p>Lun-Vie: 9AM-6PM, Sáb: 10AM-2PM</p>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact-form">
+                    <input type="text" placeholder="Nombre completo" required>
+                    <input type="email" placeholder="Correo electrónico" required>
+                    <input type="tel" placeholder="Teléfono">
+                    <select>
+                        <option value="">Selecciona un asunto</option>
+                        <option value="ventas">Ventas</option>
+                        <option value="soporte">Soporte Técnico</option>
+                        <option value="garantia">Garantía</option>
+                        <option value="otro">Otro</option>
+                    </select>
+                    <textarea placeholder="Mensaje" rows="5" required></textarea>
+                    <button type="submit" class="btn-primary">Enviar Mensaje</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3><i class="fas fa-baby"></i> BabyImport</h3>
+                    <p>Tu aliado en el cuidado de los más pequeños. Productos importados de calidad para el bienestar de tu bebé.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Enlaces Rápidos</h4>
+                    <ul>
+                        <li><a href="#inicio">Inicio</a></li>
+                        <li><a href="#productos">Productos</a></li>
+                        <li><a href="#categorias">Categorías</a></li>
+                        <li><a href="#nosotros">Nosotros</a></li>
+                        <li><a href="#contacto">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Categorías</h4>
+                    <ul>
+                        <li><a href="#">Sillas de Auto</a></li>
+                        <li><a href="#">Cochecitos</a></li>
+                        <li><a href="#">Ropa de Bebé</a></li>
+                        <li><a href="#">Juguetes</a></li>
+                        <li><a href="#">Alimentación</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Métodos de Pago</h4>
+                    <div class="payment-methods">
+                        <i class="fab fa-cc-visa"></i>
+                        <i class="fab fa-cc-mastercard"></i>
+                        <i class="fab fa-cc-paypal"></i>
+                        <i class="fab fa-cc-amex"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 BabyImport. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
